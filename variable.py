@@ -19,21 +19,21 @@ setTempo(200)
 #synth1 = HIPHOP_SYNTHPLUCKLEAD_005 # Assigns a clip to the variable "synth1"
 synth1 = CIARA_MELANIN_THEME_TUBA_1
 synth2 = RD_CINEMATIC_SCORE_STRINGS_4
-drums = RD_WORLD_PERCUSSION_BASSWOODENTONE_1
+drums = CIARA_SET_DRUMBEAT_1
 
 # fitMedia adds the clip "synth1" is holding to the DAW
 fitMedia(synth1, 1, 1, 2)
 
 # synth1 and synth2 are used many times
-fitMedia(synth2, 1, 2, 5)
-fitMedia(synth1, 2, 3, 8)
-fitMedia(synth2, 1, 4, 5)
-#fitMedia(synth1, 1, 5, 6)
-#fitMedia(synth2, 1, 6, 7)
-#fitMedia(synth1, 1, 7, 8)
-fitMedia(synth2, 1, 8, 9)
+fitMedia(synth2, 1, 2, 9)
+fitMedia(synth1, 2, 2, 8)
 
 fitMedia(drums, 3, 1, 9)
+
+setEffect(1, VOLUME, GAIN, -30, 1.5, 0, 7.5)
+setEffect(2, VOLUME, GAIN, 0, 3, -10, 5)
+setEffect(2, VOLUME, GAIN, -10, 5, 0, 7)
+setEffect(3, VOLUME, GAIN, -20)
 
 #Finish
 finish()
